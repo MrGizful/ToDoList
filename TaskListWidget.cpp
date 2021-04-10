@@ -7,7 +7,7 @@ TaskListWidget::TaskListWidget(QList<TaskWidget*> list, QWidget *parent) : QWidg
     for(int i = 0; i < m_taskList.size(); i++)
     {
         layout->addWidget(m_taskList.at(i));
-        connect(m_taskList.at(i), SIGNAL(deleteTask(QWidget*)), SLOT(slotDeleteTask(QWidget*)));
+        connect(m_taskList.at(i), SIGNAL(deleteTask(TaskWidget*)), SLOT(slotDeleteTask(TaskWidget*)));
     }
     setLayout(layout);
 
@@ -18,7 +18,7 @@ TaskListWidget::TaskListWidget(QList<TaskWidget*> list, QWidget *parent) : QWidg
     setStyleSheet(style);
 }
 
-void TaskListWidget::slotDeleteTask(QWidget* task)
+void TaskListWidget::slotDeleteTask(TaskWidget* task)
 {
     if(task)
         for(int i = 0; i < m_taskList.size(); i++)
@@ -34,7 +34,7 @@ void TaskListWidget::slotDeleteTask(QWidget* task)
 void TaskListWidget::slotAddTask(const QString& taskName)
 {
     TaskWidget* wgt = new TaskWidget(taskName);
-    connect(wgt, SIGNAL(deleteTask(QWidget*)), SLOT(slotDeleteTask));
+    connect(wgt, SIGNAL(deleteTask(TaskWidget*)), SLOT(slotDeleteTask(TaskWidget*)));
     m_taskList.append(wgt);
     layout()->addWidget(wgt);
 }

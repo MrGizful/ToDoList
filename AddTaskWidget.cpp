@@ -11,7 +11,7 @@ AddTaskWidget::AddTaskWidget(QWidget* parent) : QLabel(parent)
     layout->addWidget(m_addBtn);
     setLayout(layout);
 
-    setMinimumWidth(200);
+    setMinimumSize(200, 50);
     m_addBtn->setMinimumSize(30, 30);
 
     connect(m_addBtn, SIGNAL(clicked()), SLOT(slotAddTask()));

@@ -1,0 +1,4 @@
+ToDoListWidget, QFrame
+{
+    background-color: gray;
+}

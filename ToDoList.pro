@@ -12,12 +12,14 @@ SOURCES += \
     AddTaskWidget.cpp \
     TaskListWidget.cpp \
     TaskWidget.cpp \
+    ToDoListWidget.cpp \
     main.cpp
 
 HEADERS += \
     AddTaskWidget.h \
     TaskListWidget.h \
-    TaskWidget.h
+    TaskWidget.h \
+    ToDoListWidget.h
 
 FORMS +=
 

@@ -18,7 +18,7 @@ public:
     QString getCompletedTaskStyle();
 
 signals:
-    void deleteTask(QWidget*);
+    void deleteTask(TaskWidget*);
 
 public slots:
     void slotChangeState(int);

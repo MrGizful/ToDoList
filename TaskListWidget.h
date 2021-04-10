@@ -12,7 +12,7 @@ public:
     TaskListWidget(QList<TaskWidget*> list, QWidget *parent = nullptr);
 
 public slots:
-    void slotDeleteTask(QWidget* task);
+    void slotDeleteTask(TaskWidget* task);
     void slotAddTask(const QString& taskName);
 
 };

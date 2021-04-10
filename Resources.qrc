@@ -4,5 +4,6 @@
         <file>Style/CompletedTaskStyle.qss</file>
         <file>Images/check.png</file>
         <file>Style/AddTaskStyle.qss</file>
+        <file>Style/ToDoListWidgetStyle.qss</file>
     </qresource>
 </RCC>
