@@ -1,11 +1,13 @@
 #include "TaskWidget.h"
 
-TaskWidget::TaskWidget(QString task, QWidget *parent) : QWidget(parent)
+TaskWidget::TaskWidget(QString task, QWidget *parent) : QLabel(parent)
 {
     m_completion = new QCheckBox;
     m_task = new QLineEdit(task);
     m_deleteBtn = new QPushButton("X");
     m_deleteBtn->setFixedWidth(25);
+    this->setMinimumHeight(60);
+    this->setMinimumWidth(200);
 
     QHBoxLayout* layout = new QHBoxLayout;
     layout->addWidget(m_completion);
@@ -41,4 +43,14 @@ void TaskWidget::slotChangeState(int state)
 void TaskWidget::slotDeleteTask()
 {
     emit deleteTask(this);
+}
+
+QString TaskWidget::getActiveTaskStyle()
+{
+    return activeTaskStyleSheet;
+}
+
+QString TaskWidget::getCompletedTaskStyle()
+{
+    return completedTaskStyleSheet;
 }

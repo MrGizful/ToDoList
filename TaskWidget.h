@@ -1,7 +1,7 @@
 #pragma once
 #include <QtWidgets>
 
-class TaskWidget : public QWidget
+class TaskWidget : public QLabel
 {
     Q_OBJECT
 private:
@@ -14,6 +14,8 @@ private:
 
 public:
     TaskWidget(QString task = "To do", QWidget *parent = nullptr);
+    QString getActiveTaskStyle();
+    QString getCompletedTaskStyle();
 
 signals:
     void deleteTask(QWidget*);

@@ -1,20 +1,18 @@
 #include <QtWidgets>
 #include "TaskWidget.h"
+#include "TaskListWidget.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-//    QWidget wgt;
-//    TaskWidget* wgt1 = new TaskWidget;
-//    TaskWidget* wgt2 = new TaskWidget;
 
-//    QVBoxLayout* layout = new QVBoxLayout;
-//    layout->addWidget(wgt1);
-//    layout->addWidget(wgt2);
-//    wgt.setLayout(layout);
+    QList<TaskWidget*> list;
+    list.append(new TaskWidget("Task 1"));
+    list.append(new TaskWidget("Task 2"));
+    list.append(new TaskWidget("Task 3"));
+    list.append(new TaskWidget("Task 4"));
 
-//    wgt.show();
-    TaskWidget wgt;
+    TaskListWidget wgt(list);
     wgt.show();
 
     return a.exec();
