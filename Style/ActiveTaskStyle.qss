@@ -5,8 +5,13 @@ TaskListWidget
 
 TaskWidget
 {
-    border: 2px solid black;
+    border: 2px solid #de9021;
     background-color: #de9021;
+}
+
+TaskWidget:hover
+{
+    border: 2px solid #be7815;
 }
 
 QCheckBox::indicator

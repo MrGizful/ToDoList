@@ -3,7 +3,7 @@
 TaskListWidget::TaskListWidget(QList<TaskWidget*> list, QWidget *parent) : QWidget(parent), m_taskList(list)
 {
     QVBoxLayout* layout = new QVBoxLayout;
-    layout->setSpacing(0);
+    layout->setSpacing(3);
     for(int i = 0; i < m_taskList.size(); i++)
     {
         layout->addWidget(m_taskList.at(i));

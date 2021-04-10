@@ -1,6 +1,7 @@
 #include <QtWidgets>
 #include "TaskWidget.h"
 #include "TaskListWidget.h"
+#include "AddTaskWidget.h"
 
 int main(int argc, char *argv[])
 {
@@ -14,6 +15,9 @@ int main(int argc, char *argv[])
 
     TaskListWidget wgt(list);
     wgt.show();
+
+    AddTaskWidget addWgt;
+    addWgt.show();
 
     return a.exec();
 }

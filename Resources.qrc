@@ -3,5 +3,6 @@
         <file>Style/ActiveTaskStyle.qss</file>
         <file>Style/CompletedTaskStyle.qss</file>
         <file>Images/check.png</file>
+        <file>Style/AddTaskStyle.qss</file>
     </qresource>
 </RCC>

@@ -1,0 +1,21 @@
+AddTaskWidget
+{
+    background-color: gray;
+}
+
+QLineEdit
+{
+    border: 2px solid lightgray;
+    background-color: lightgray;
+}
+
+QPushButton
+{
+    border: 2px solid lightblue;
+    background-color: lightblue;
+}
+
+QPushButton:hover
+{
+    border: 2px solid #86bbcd;
+}

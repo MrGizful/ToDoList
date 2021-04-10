@@ -1,7 +1,12 @@
 TaskWidget
 {
-    border: 2px solid black;
-    background-color: #7bee15;
+    border: 2px solid #74cb27;
+    background-color: #74cb27;
+}
+
+TaskWidget:hover
+{
+    border: 2px solid #5db90c;
 }
 
 QCheckBox::indicator
@@ -21,8 +26,8 @@ QCheckBox::indicator:hover
 
 QLineEdit
 {
-    border: 0px solid #7bee15;
-    background-color: #7bee15;
+    border: 2px solid #74cb27;
+    background-color: #74cb27;
 }
 
 QPushButton
