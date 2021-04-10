@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Style/ActiveTaskStyle.qss</file>
+        <file>Style/CompletedTaskStyle.qss</file>
+        <file>Images/check.png</file>
+    </qresource>
+</RCC>

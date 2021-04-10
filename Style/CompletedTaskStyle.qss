@@ -1,0 +1,39 @@
+TaskWidget
+{
+    border: 3px solid black;
+    background-color: #7bee15;
+}
+
+QCheckBox::indicator
+{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 9px; 
+    background-color: white;
+    image: url(:/Images/check.png);
+}
+
+QCheckBox::indicator:hover
+{
+    background-color: lightgray;
+}
+
+QLineEdit
+{
+    border: 0px solid #7bee15;
+    background-color: #7bee15;
+}
+
+QPushButton
+{
+    border: 2px;
+    font-size: x-large;
+    font-weight: bold;
+    color: darkred;
+}
+
+QPushButton:hover
+{
+    color: #e90a0a;
+}
